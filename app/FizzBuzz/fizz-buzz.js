@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.fizzBuzz')
+angular.module('myApp.fizzBuzz',[])
 .controller('FizzBuzz', [function() {
 
 }]);

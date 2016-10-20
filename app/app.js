@@ -1,6 +1,3 @@
 'use strict';
 
-angular.module('myApp', [
-  'myApp.FizzBuzz',
-  'myApp.version'
-]);
+angular.module('myApp', ['myApp.fizzBuzz']);

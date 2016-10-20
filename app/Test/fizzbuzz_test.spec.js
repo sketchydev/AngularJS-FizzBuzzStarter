@@ -1,16 +1,17 @@
 'use strict';
 
-describe('myApp.FizzBuzz module', function() {
+describe('Given A FizzBuzz Controller', function() {
+  var controller, scope;
 
   beforeEach(module('myApp.fizzBuzz'));
 
-  describe('FizzBuzz controller', function(){
+  beforeEach(inject(function($injector, $controller, $rootScope){
+    scope = $rootScope.$new();
+    controller =  $controller('FizzBuzzController', {$scope:scope});
+  }));
 
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view1Ctrl = $controller('FizzBuzz');
-      expect(view1Ctrl).toBeDefined();
-    }));
-
+  it("sample test", function(){
+    expect(true).toBe(true);
   });
+
 });
